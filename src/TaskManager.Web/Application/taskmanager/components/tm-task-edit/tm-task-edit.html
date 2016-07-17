@@ -1,0 +1,10 @@
+﻿
+<span>
+    <span ng-bind="$ctrl.item.name" ng-show="!$ctrl.editMode"></span>
+    <input type="text" ng-model="$ctrl.taskName" ng-show="$ctrl.editMode" />
+    <button ng-click="$ctrl.edit()" ng-show="!$ctrl.editMode">Редактировать</button>
+    <button ng-click="$ctrl.delete()" ng-show="!$ctrl.editMode">Х</button>
+    <button ng-click="$ctrl.reset()" ng-show="$ctrl.editMode">Отмена</button>
+    <button ng-click="$ctrl.accept()" ng-show="$ctrl.editMode && $ctrl.taskName">Сохранить</button>
+
+</span>

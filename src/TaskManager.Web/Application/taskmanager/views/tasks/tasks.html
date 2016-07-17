@@ -1,0 +1,6 @@
+﻿<div>
+    <a ng-click="$tmTasks.add()">Добавить</a>
+    <ul>
+        <li ng-repeat="item in $tmTasks.tasks"><tm-task-edit task="item" on-updated="$tmTasks.save(task)" on-removed="$tmTasks.delete(task)"></tm-task-edit></li>
+    </ul>
+</div>

@@ -1,0 +1,6 @@
+﻿<span ng-show="$ctrl.user" ng-bind="$ctrl.user.name"></span><button ng-show="$ctrl.user" ng-click="$ctrl.logOut()" >Выход</button>
+<span ng-show="!$ctrl.user">
+    <input type="text" ng-model="$ctrl.loginName" placeholder="Логин" />
+    <input type="password" ng-model="$ctrl.loginPassword" placeholder="Пароль" />
+    <button ng-click="$ctrl.login()">Войти</button>
+</span>
